@@ -30,3 +30,17 @@ const images =[
 //- append the created images to the thumbnail-container
 // }
 //TODO: I need to create my large images
+//This task is the event handler for the thumbnail events 
+// function createLargeImagesHandler(){
+//Select the large-image-container
+//Delete the current image in the large-image-conatiner
+//largeImageContainer.innerHTML = null OR ""
+//Create an image 
+//Update the src and alt values 
+//add a className for styling  
+//append the img to the container 
+
+// }
+
+//Add this event handler to the thumbnail event
+//Make sure you call the createThumbnails function
