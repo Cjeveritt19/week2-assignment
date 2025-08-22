@@ -5,22 +5,34 @@ console.log("hello world");
 //Either use immages stored locally or remotely
 const images =[
     {
-        url: "url1", //relative path for local images OR link to image
-        altText:"altText1",
+        url: "https://images.unsplash.com/photo-1674973382543-6681bbdbf852?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", //relative path for local images OR link to image
+        altText:"A brown and white guinea pig sitting in a small container",
     },
     {
-        url: "url2",
-        altText: "altText2",
+        url: "https://images.unsplash.com/photo-1583160247711-2191776b4b91?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        altText: "A white short coat puppy laying in a small flower field",
     },
     {
-        url: "url3",
-        altText: "altText3",
+        url: "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        altText: "A turtle swimming underwater",
     }
 ]
 
 //TODO: I need to create my thumbnail images 
-//function createThumbnails(){
-    //Select the DOM element (thumbnail-conatainer) to contain our thumbnails
+function createThumbnails(){
+//Select the DOM element (thumbnail-container) to contain our thumbnails
+    const thumbnails = document.getElementById("thumbnail-container")
+
+
+
+
+
+
+
+
+
+
+
 //This is a repetitive task loop through our array using the length property
 //Inside the loop I need to this:
 //- create the img element
@@ -28,11 +40,13 @@ const images =[
 //- give each img a className(img.className)
 //- add an event to each imaage event handler of this listner is the function you write to create large images 
 //- append the created images to the thumbnail-container
-// }
+}
 //TODO: I need to create my large images
 //This task is the event handler for the thumbnail events 
-// function createLargeImagesHandler(){
+function createLargeImagesHandler(){
 //Select the large-image-container
+    const largeimage = document.getElementById("large-image-container")
+
 //Delete the current image in the large-image-conatiner
 //largeImageContainer.innerHTML = null OR ""
 //Create an image 
@@ -40,7 +54,7 @@ const images =[
 //add a className for styling  
 //append the img to the container 
 
-// }
+}
 
 //Add this event handler to the thumbnail event
 //Make sure you call the createThumbnails function
