@@ -19,5 +19,14 @@ const images =[
 ]
 
 //TODO: I need to create my thumbnail images 
-
+//function createThumbnails(){
+    //Select the DOM element (thumbnail-conatainer) to contain our thumbnails
+//This is a repetitive task loop through our array using the length property
+//Inside the loop I need to this:
+//- create the img element
+//- update the src and alt attributes of the img element to match those in the array(parameters)
+//- give each img a className(img.className)
+//- add an event to each imaage event handler of this listner is the function you write to create large images 
+//- append the created images to the thumbnail-container
+// }
 //TODO: I need to create my large images
