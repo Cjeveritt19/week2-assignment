@@ -21,7 +21,13 @@ const images =[
 //TODO: I need to create my thumbnail images 
 function createThumbnails(){
 //Select the DOM element (thumbnail-container) to contain our thumbnails
-    const thumbnails = document.getElementById("thumbnail-container")
+    const thumbnail = document.getElementById("thumbnail-container")
+    images.forEach(function (thumbnails){ 
+    const img1 = document.createElement("img1");
+    img1.src= thumbnails.url;
+    img1.alt= thumbnails.altText;
+    img1.className = "Animals"
+})
 
 
 
@@ -32,13 +38,12 @@ function createThumbnails(){
 
 
 
-
-//This is a repetitive task loop through our array using the length property
-//Inside the loop I need to this:
+// This is a repetitive task loop through our array using the length property
+// Inside the loop I need to this:
 //- create the img element
 //- update the src and alt attributes of the img element to match those in the array(parameters)
 //- give each img a className(img.className)
-//- add an event to each imaage event handler of this listner is the function you write to create large images 
+//- add an event to each image event handler of this listner is the function you write to create large images 
 //- append the created images to the thumbnail-container
 }
 //TODO: I need to create my large images
