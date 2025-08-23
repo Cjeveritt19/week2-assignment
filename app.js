@@ -28,8 +28,8 @@ function createThumbnails(){
     img1.alt = images[i].altText;
     img1.className = "Animals";
     img1.addEventListener("click",function () {
-        // createLargeImagesHandler(i);
-        console.log (img1)
+        createLargeImagesHandler(i);
+        // console.log (img1)
     });
     thumbnail.appendChild(img1);
 
@@ -62,7 +62,8 @@ function createThumbnails(){
 // \Update the src and alt values 
 // \add a className for styling//Create an image 
 // \Update the src and alt values 
-// \add a className for styling  
+// \add a className for styling
+// \append the img to the container 
 function createLargeImagesHandler(i){
     const largeimage = document.getElementById("large-image-container");
     largeimage.innerHTMl = null;
@@ -71,14 +72,11 @@ function createLargeImagesHandler(i){
     img2.alt = images[i].altText;
     img2.className = "largeimage";
 
-
-
-
-
-
-//append the img to the container 
+    largeimage.appendChild(img2);
 
 }
+
+createLargeImagesHandler()
 
 //Add this event handler to the thumbnail event
 //Make sure you call the createThumbnails function//
