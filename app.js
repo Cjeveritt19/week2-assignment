@@ -20,14 +20,13 @@ const images =[
 
 //TODO: I need to create my thumbnail images 
 function createThumbnails(){
-//\Select the DOM element (thumbnail-container) to contain our thumbnails
     const thumbnail = document.getElementById("thumbnail-container");
     for (let i = 0; i < images.length; i++) {
     // images.forEach(function (thumbnails){ 
-    const img1= document.createElement("img");
-    img1.src= images[i].url;
-    img1.alt= images[i].altText;
-    img1.className= "Animals";
+    const img1 = document.createElement("img");
+    img1.src = images[i].url;
+    img1.alt = images[i].altText;
+    img1.className = "Animals";
     img1.addEventListener("click",function () {
         // createLargeImagesHandler(i);
         console.log (img1)
@@ -45,26 +44,38 @@ function createThumbnails(){
 
 
 
-
+// \Select the DOM element (thumbnail-container) to contain our thumbnails
 // \This is a repetitive task loop through our array using the length property
 // \Inside the loop I need to this:
 //- \create the img element
 //- \update the src and alt attributes of the img element to match those in the array(parameters)
 //- \give each img a className(img.className)
-//- add an event to each image event handler of this listner is the function you write to create large images 
-//- append the created images to the thumbnail-container
+//- \add an event to each image event handler of this listner is the function you write to create large images 
+//- \append the created images to the thumbnail-container
 
 //TODO: I need to create my large images
-//This task is the event handler for the thumbnail events 
-function createLargeImagesHandler(){
-//Select the large-image-container
-    const largeimage = document.getElementById("large-image-container")
+// \This task is the event handler for the thumbnail events 
+// \Select the large-image-container
+// \Delete the current image in the large-image-conatiner
+// \largeImageContainer.innerHTML = null OR ""
+// \Create an image 
+// \Update the src and alt values 
+// \add a className for styling//Create an image 
+// \Update the src and alt values 
+// \add a className for styling  
+function createLargeImagesHandler(i){
+    const largeimage = document.getElementById("large-image-container");
+    largeimage.innerHTMl = null;
+    const img2 = document.createElement("img");
+    img2.src = images[i].url;
+    img2.alt = images[i].altText;
+    img2.className = "largeimage";
 
-//Delete the current image in the large-image-conatiner
-//largeImageContainer.innerHTML = null OR ""
-//Create an image 
-//Update the src and alt values 
-//add a className for styling  
+
+
+
+
+
 //append the img to the container 
 
 }
