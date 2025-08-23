@@ -64,19 +64,19 @@ function createThumbnails(){
 // \Update the src and alt values 
 // \add a className for styling
 // \append the img to the container 
-function createLargeImagesHandler(i){
+function createLargeImagesHandler(i) {
     const largeimage = document.getElementById("large-image-container");
-    largeimage.innerHTMl = "";
-    const img2 = document.createElement("img");
-    img2.src = images[i].url;
-    img2.alt = images[i].altText;
-    img2.className = "largeimage";
+    largeimage.innerHTML = "";
+    const img1 = document.createElement("img");
+    img1.src = images[i].url;
+    img1.alt = images[i].altText;
+    img1.className = "largeimage";
 
-    largeimage.appendChild(img2);
+    largeimage.appendChild(img1);
 
 }
 
-createLargeImagesHandler()
+
 
 //Add this event handler to the thumbnail event
 //Make sure you call the createThumbnails function//
