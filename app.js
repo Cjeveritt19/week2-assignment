@@ -66,7 +66,7 @@ function createThumbnails(){
 // \append the img to the container 
 function createLargeImagesHandler(i){
     const largeimage = document.getElementById("large-image-container");
-    largeimage.innerHTMl = null;
+    largeimage.innerHTMl = "";
     const img2 = document.createElement("img");
     img2.src = images[i].url;
     img2.alt = images[i].altText;

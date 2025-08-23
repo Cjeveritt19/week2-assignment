@@ -7,3 +7,13 @@
 body {
     background-color: peru;
 }
+
+#thumbnail-container {
+    border: 2px solid black;
+    overflow-x: scroll;
+}
+
+.animals {
+    height: 200px;
+    width: auto;
+}
