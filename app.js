@@ -15,6 +15,10 @@ const images =[
     {
         url: "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         altText: "A turtle swimming underwater",
+    },
+    {
+        url: "https://images.unsplash.com/photo-1525382455947-f319bc05fb35?q=80&w=596&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        altText: "A panda eating a green plant",
     }
 ]
 

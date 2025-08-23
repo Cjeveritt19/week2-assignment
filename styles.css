@@ -5,15 +5,40 @@
 }
 
 body {
-    background-color: peru;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: pink;
 }
 
 #thumbnail-container {
     overflow-x: scroll;
+    display: flex;
+    height: 150px;
+    width: 100%;
+    gap: 5px;
+    border: 2px solid pink;
 }
 
-.animals {
-    height: 150px;
-    width: auto;
-    display: flex;
+#thumbnail-container > img {
+    width: 10rem;
+    height: 10rem;
+    display: inline;
 }
+
+#large-image-container {
+    display: flex;
+    width: 100%;
+}
+
+#large-image-container > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
