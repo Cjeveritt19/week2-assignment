@@ -68,6 +68,8 @@ function createThumbnails(){
 // \Update the src and alt values 
 // \add a className for styling
 // \append the img to the container 
+// \Add this event handler to the thumbnail event
+// \Make sure you call the createThumbnails function//
 function createLargeImagesHandler(i) {
     const largeimage = document.getElementById("large-image-container");
     largeimage.innerHTML = "";
@@ -81,6 +83,3 @@ function createLargeImagesHandler(i) {
 }
 
 
-
-//Add this event handler to the thumbnail event
-//Make sure you call the createThumbnails function//
