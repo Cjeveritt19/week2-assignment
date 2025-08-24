@@ -18,3 +18,5 @@ Can I please have some feed back on the java script part of my submission as tha
 I had to ask for help from Manny, on some of the javascript. I also had help from Sam and Will to help with some javascript as there was some errors that I kept experiencing but couldnt figure out what they were. Along with this they helped with some css code as i couldnt figure out how to enlarge the images properly.
 
 I think the project has come out better then expected all together I just need a short break to recenter myself and have a fresh head with it all.
+
+https://cjeveritt19.github.io/week2-assignment/
